@@ -9,7 +9,7 @@ User = get_user_model()
 class Post(models.Model):
     class Meta:
         ordering = ["-pub_date"]
-        
+
     text = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(
